@@ -1,0 +1,20 @@
+Comandos JasonServer
+
+Instala o servidor.
+> npm install -g json-server
+
+O servidor será iniciado em localhost:3000
+> json-server --watch db.json
+
+
+
+Comandos Angular:
+
+Instalar dependências do AngularCli.
+> npm install
+
+Cria um novo componente.
+> ng g c nome-do-componente
+> ng g c pasta/nome-do-componente
+
+	

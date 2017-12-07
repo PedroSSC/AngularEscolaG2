@@ -1,0 +1,36 @@
+<a routerLink="/admin/pessoas/0/novo" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Cadastrar</a>
+<h1>Lista de funcionarios</h1>
+
+<hr>
+<div class="alert alert-success" *ngIf="excluir_ok">
+    <strong>Sucesso!</strong> O funcionário foi excluído com sucesso.
+</div>
+<div class="alert alert-danger" *ngIf="excluir_erro">
+    <strong>Ops!</strong> Ocorreu um erro ao tentar excluir o funcionário. Aguarde alguns instantes e tente novamente.
+</div>
+
+<div class="row">
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th width="80">Código</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Tipo</th>
+        <th width="250">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let funcionario of funcionarios">
+        <th>{{funcionario.cod}}</th>
+        <td>{{funcionario.pessoa.nome}}</td>
+        <td>{{funcionario.pessoa.cpf}}</td>
+        <td>{{funcionario.tipo.nome}}</td>
+        <td>
+            <a [routerLink]="['/admin/pessoas', funcionarios.id, 'editar']" class="btn btn-secondary btn-sm">Editar</a>
+            <a href="javascript:void(0)" class="btn btn-danger btn-sm" (click)="excluir(pessoa)">Excluir</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

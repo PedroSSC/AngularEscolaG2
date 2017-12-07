@@ -1,0 +1,186 @@
+{
+  "disciplinas": [
+    {
+      "id": 1,
+      "codigo": "001",
+      "nome": "Português"
+    },
+    {
+      "id": 2,
+      "codigo": "002",
+      "nome": "Matemática"
+    },
+    {
+      "id": 3,
+      "codigo": "003",
+      "nome": "Geografia"
+    },
+    {
+      "id": 4,
+      "codigo": "004",
+      "nome": "História"
+    },
+    {
+      "id": 5,
+      "codigo": "005",
+      "nome": "Química"
+    },
+    {
+      "id": 6,
+      "codigo": "006",
+      "nome": "Física"
+    },
+    {
+      "codigo": "010",
+      "nome": "Filosofia",
+      "id": 7
+    },
+    {
+      "codigo": "011",
+      "nome": "Educação Física",
+      "id": 8
+    },
+    {
+      "codigo": "012",
+      "nome": "Educação Moral e Cívica",
+      "id": 9
+    },
+    {
+      "codigo": "013",
+      "nome": "Artes",
+      "id": 10
+    },
+    {
+      "codigo": "014",
+      "nome": "Música",
+      "id": 11
+    },
+    {
+      "codigo": "012",
+      "nome": "Teste",
+      "id": 12
+    }
+  ],
+  "turmas": [
+    {
+      "id": 1,
+      "codigo": "001",
+      "disciplinaId": 1,
+      "ano": 2017
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "cod": "001",
+      "usuario": "pedro",
+      "senha": "123123"
+    }
+  ],
+  "pessoas": [
+    {
+      "id": 1,
+      "cod": "001",
+      "nome": "Alberto",
+      "cpf": "1234567"
+    },
+    {
+      "id": 2,
+      "cod": "002",
+      "nome": "Benicio",
+      "cpf": "285618"
+    },
+    {
+      "id": 3,
+      "cod": "003",
+      "nome": "Carlos",
+      "cpf": "57818"
+    },
+    {
+      "cod": "004",
+      "nome": "Daniela",
+      "cpf": "12345678",
+      "id": 4
+    }
+  ],
+  "funcionarios": [
+    {
+      "id": 1,
+      "cod": "001",
+      "pessoaId": 1,
+      "tipoId": 1,
+      "cargoId": 1,
+      "funcoeId": 1
+    }
+  ],
+  "tipos": [
+    {
+      "id": 1,
+      "cod": "001",
+      "nome": "Administrativo"
+    },
+    {
+      "id": 2,
+      "cod": "002",
+      "nome": "Docente"
+    }
+  ],
+  "cargos": [
+    {
+      "id": 1,
+      "cod": "001",
+      "nome": "Diretor",
+      "tipoId": 1
+    },
+    {
+      "id": 2,
+      "cod": "002",
+      "nome": "Administrador",
+      "tipoId": 1
+    },
+    {
+      "id": 3,
+      "cod": "003",
+      "nome": "Assistente",
+      "tipoId": 1
+    },
+    {
+      "id": 4,
+      "cod": "004",
+      "nome": "Professor",
+      "tipoId": 2
+    }
+  ],
+  "funcoes": [
+    {
+      "id": 1,
+      "cod": "001",
+      "nome": "Coordenador",
+      "tipoId": 1
+    },
+    {
+      "id": 2,
+      "cod": "002",
+      "nome": "Tesoureiro",
+      "tipoId": 1
+    },
+    {
+      "id": 3,
+      "cod": "003",
+      "nome": "Recursos Humanos",
+      "tipoId": 1
+    },
+    {
+      "id": 4,
+      "cod": "004",
+      "nome": "Pesquisador",
+      "tipoId": 2
+    },
+    {
+      "id": 5,
+      "cod": "005",
+      "nome": "Orientador",
+      "tipoId": 2
+    }
+  ]
+}
